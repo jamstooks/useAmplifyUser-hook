@@ -2,6 +2,10 @@
 
 A demonstration of using hooks with [AWS Amplify authentication](https://aws-amplify.github.io/docs/js/authentication) and route-level permissions.
 
+![image](https://user-images.githubusercontent.com/585436/69194692-a413cd00-0ade-11ea-8271-6a9ac2af8d2b.png)
+
+![image](https://user-images.githubusercontent.com/585436/69194676-8fcfd000-0ade-11ea-99e4-154a1dc23439.png)
+
 ## Getting Started
 
 ### Configure Amplify
