@@ -8,7 +8,7 @@ A demonstration of using hooks with [AWS Amplify authentication](https://aws-amp
 
 There are lots of Amplify auth providers available, so I won't detail them here. This example is configured for [Cognito auth](https://aws.amazon.com/cognito/), but with a few tweaks you should be able to get this working with just about any auth backend.
 
-Configure your Amplify configuration in [`config/amplify`](config/amplify.js). You might also like to set up an `.env` file as I have in this example.
+Configure your Amplify configuration in [`config/amplify`](src/config/amplify.js). You might also like to set up an `.env` file as I have in this example.
 
 ### Run it
 
@@ -20,8 +20,8 @@ yarn start
 
 ## What's what?
 
-In this example, the [`auth`](auth/) directory has just one hook and one component:
+In this example, the [`auth`](src/auth/) directory has just one hook and one component:
 
-The hook, [`useAmplifyUser`](auth/hooks/useAmplifyUser.js) can be applied to any component that needs access to the user.
+The hook, [`useAmplifyUser`](src/auth/hooks/useAmplifyUser.js) can be applied to any component that needs access to the user.
 
-The component, [`ProtectedRoute`](auth/components/ProtectedRoute.js), is just an example of how you can protect a specific route. This is a basic example, but you could add role checks or add an escape hatch for custom share tokens...
+The component, [`ProtectedRoute`](src/auth/components/ProtectedRoute.js), is just an example of how you can protect a specific route. This is a basic example, but you could add role checks or add an escape hatch for custom share tokens...
