@@ -10,7 +10,7 @@ export default function Private() {
   return (
     <div>
       <h2>This is private!</h2>
-      <p>
+      <p style={{ color: 'seaGreen' }}>
         But you have access :)
         <pre>{username}</pre>
       </p>

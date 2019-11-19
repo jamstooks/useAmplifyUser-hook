@@ -17,12 +17,12 @@ Amplify.configure(amplifyConfig)
 export default function App() {
   const [user, signOut] = useAmplifyUser()
 
-  const username = _.get(user, 'username', 'No User')
+  const username = _.get(user, 'username')
   return (
     <div>
       <div style={{ backgroundColor: 'lightGray', padding: '1em' }}>
-        User: <i>{username}</i>
         {user ? <SignOut signOut={signOut} /> : <SignIn />}
+        {username}
       </div>
 
       <BrowserRouter>
