@@ -20,8 +20,8 @@ yarn start
 
 ## What's what?
 
-In this example, the [`auth`](src/auth/) directory has just one hook and one component:
+In this example, the [`auth`](./src/auth/) directory has just one hook and one component:
 
-The hook, [`useAmplifyUser`](src/auth/hooks/useAmplifyUser.js) can be applied to any component that needs access to the user.
+The hook, [`useAmplifyUser`](src/src/auth/hooks/useAmplifyUser.js) can be applied to any component that needs access to the user.
 
 The component, [`ProtectedRoute`](src/auth/components/ProtectedRoute.js), is just an example of how you can protect a specific route. This is a basic example, but you could add role checks or add an escape hatch for custom share tokens...
