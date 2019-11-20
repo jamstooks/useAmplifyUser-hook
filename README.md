@@ -22,6 +22,17 @@ yarn start
 
 [`useAmplifyUser`](src/auth/hooks/useAmplifyUser.js) can be applied to any component that needs access to the user.
 
+```
+const [user, signOut] = useAmplifyUser()
+```
+
 ## Route Protection
 
 [`ProtectedRoute`](src/auth/components/ProtectedRoute.js) is just an example of how you can protect a specific route. This is a basic example, but one could add role checks or add an escape hatch for custom share tokens...
+
+```
+<Switch>
+  <ProtectedRoute path="/private" component={Private} />
+  ...
+</Switch>
+```
